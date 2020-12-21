@@ -8,14 +8,16 @@
   <img src="./1608516380(1).png" style="    width: 400px;    display: block; margin: auto;"/>
   <span style="    font-size: 60px;">允许入校，学号：20182200213，姓名：王晖，当前时间</span><span id="aa" style="    font-size: 60px;"></span>
 <script>
-var curr_time = new Date();
+setInterval(function(){ 
+ var curr_time = new Date();
 var strDate = 2020+"-";
 strDate += curr_time.getMonth()+1+"-";
 strDate += curr_time.getDate()+"  ";
 strDate += curr_time.getHours()+":";
 strDate += curr_time.getMinutes()+":";
 strDate += curr_time.getSeconds(); 
-setInterval(function(){ document.getElementById('aa').innerHTML = strDate;  }, 1000);  
+document.getElementById('aa').innerHTML = strDate; 
+}, 1000);  
 </script>
 
 </body>

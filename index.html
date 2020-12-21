@@ -1,1 +1,21 @@
-<span>允许入校，学号：20182200213，姓名：王辉，当前时间2020-12-19</span>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>菜鸟教程(runoob.com)</title>
+</head>
+<body>
+  <span>允许入校，学号：20182200213，姓名：王辉，当前时间</span><span id="aa"></span>
+<script>
+var curr_time = new Date();
+var strDate = 2020+"-";
+strDate += curr_time.getMonth()+1+"-";
+strDate += curr_time.getDate()+"  ";
+strDate += curr_time.getHours()+":";
+strDate += curr_time.getMinutes()+":";
+strDate += curr_time.getSeconds();
+document.getElementById('aa').innerHTML = strDate;  
+</script>
+
+</body>
+</html>

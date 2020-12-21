@@ -14,8 +14,8 @@ strDate += curr_time.getMonth()+1+"-";
 strDate += curr_time.getDate()+"  ";
 strDate += curr_time.getHours()+":";
 strDate += curr_time.getMinutes()+":";
-strDate += curr_time.getSeconds();
-document.getElementById('aa').innerHTML = strDate;  
+strDate += curr_time.getSeconds(); 
+setInterval(function(){ document.getElementById('aa').innerHTML = strDate;  }, 1000);  
 </script>
 
 </body>
